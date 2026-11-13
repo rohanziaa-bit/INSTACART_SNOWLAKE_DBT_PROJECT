@@ -1,0 +1,11 @@
+snapshots:
+  - name: dim_product
+    relation: ref('product')
+    config:
+      schema: gold
+      unique_key: PRODUCT_ID
+      strategy: check
+      check_cols:
+        - PRODUCT_NAME
+        - AISLE_ID
+        - DEPARTMENT_ID

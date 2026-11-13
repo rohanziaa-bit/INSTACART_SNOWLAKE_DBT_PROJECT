@@ -1,0 +1,6 @@
+SELECT
+   PRODUCT_ID,
+   NULLIF(TRIM(PRODUCT_NAME), '') AS PRODUCT_NAME,
+   AISLE_ID,
+   DEPARTMENT_ID
+FROM {{ ref('br_product')}}

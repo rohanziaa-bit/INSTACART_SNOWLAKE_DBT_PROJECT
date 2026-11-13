@@ -1,0 +1,25 @@
+version: 2 
+
+models:
+  - name: obt
+    description: "Order product level one big table"
+
+    columns:
+     - name: ORDER_ID
+       tests:
+        - not_null
+      
+     - name: PRODUCT_ID
+       tests:
+        - not_null
+      
+      
+     - name: USER_ID
+       tests:
+        - not_null
+      
+     - name: REORDERED
+       tests:
+        - accepted_values:
+            arguments: 
+              values: [0,1]

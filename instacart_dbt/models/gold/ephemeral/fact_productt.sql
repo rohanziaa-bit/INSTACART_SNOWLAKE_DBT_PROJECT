@@ -1,0 +1,13 @@
+{{ config(materialized = 'table')}}
+SELECT
+   ORDER_ID,
+   USER_ID,
+   PRODUCT_ID,
+   ORDER_NUMBER,
+   ORDER_DOW,
+   ORDER_HOUR_OF_DAY,
+   DAYS_SINCE_PRIOR_ORDER,
+   ADD_TO_CART_ORDER,
+   REORDERED,
+   1 AS PRODUCT_COUNT
+FROM {{ ref('obt')}}

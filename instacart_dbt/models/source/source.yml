@@ -1,0 +1,19 @@
+version:
+sources:
+  - name: instacart
+    description: "This source contains the INSTACART data for the project"
+    database: INS_DB
+    schema: STAGING
+
+    tables: 
+     - name: PRODUCTS
+       description: "Product details"
+     - name: DEPARTMENTS
+       description: "Product department details"
+     - name: AISLES
+       description: "Product aisle details"
+     - name: ORDER_PRODUCTS_PRIOR
+       description: "Previous order product details"
+     - name: ORDERS
+       description: "Customer order details"
+ 

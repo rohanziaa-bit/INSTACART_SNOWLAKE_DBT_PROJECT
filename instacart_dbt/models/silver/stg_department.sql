@@ -1,0 +1,4 @@
+SELECT 
+  DEPARTMENT_ID,
+  TRIM(DEPARTMENT) AS DEPARTMENT_NAME
+FROM {{ (ref('br_department'))}}

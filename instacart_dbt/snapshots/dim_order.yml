@@ -1,0 +1,12 @@
+snapshots:
+  - name: dim_orders
+    relation: ref('order')
+    config:
+      schema: gold
+      unique_key: ORDER_ID
+      strategy: check
+      check_cols: 
+       - ORDER_DOW
+       - USER_ID
+
+      
